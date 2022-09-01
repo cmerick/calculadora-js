@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: blue;
+    border-radius: 100%;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+
+}
+button:hover{
+    background-color: lightblue;
+}
+button:active{
+    background-color: blue;
+}
+
+#calculator{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+}
+
+.cal-header{
+    width: 600px;
+    
+}
+
+#display{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    color: white;
+    font-size: 40px;
+    padding-right: 20px;
+    border-radius: 20px;
+}
+
+.container{
+    background-color: black;
+    max-height: 700px;
+    width: 600px;
+    display: grid;
+    grid-template-columns: repeat(4, 1f);
+    grid-auto-rows: minmax(40px, 110px);
+    gap: 10px 15px;
+    padding: 20px;
+    grid-template-areas: 
+        "num-7 num-8 num-9 sym-bar"
+        "num-4 num-5 num-6 sym-ast"
+        "num-1 num-2 num-3 sym-min"
+        "sym-plus num-0 btn-del sym-equal"
+        "sym-comma sym-erase nada nada"
+    
+    ;
+    border-radius: 20px;
+}
+
+.cal-body{
+    padding: 10px;
+}
+
+.num-7{
+    grid-area: num-7;
+}
+.num-8{
+    grid-area: num-8;
+}
+.num-9{
+    grid-area: num-9;
+}
+.sym-bar{
+    grid-area: sym-bar;
+}
+.num-4{
+    grid-area: num-4;
+}
+.num-5{
+    grid-area: num-5;
+}
+.num-6{
+    grid-area: num-6;
+}
+.sym-ast{
+    grid-area: sym-ast;
+}
+.num-1{
+    grid-area: num-1;
+}
+.num-2{
+    grid-area: num-2;
+}
+.num-3{
+    grid-area: num-3;
+}
+.sym-min{
+    grid-area: sym-min;
+}
+.sym-plus{
+    grid-area: sym-plus;
+}
+.num-0{
+    grid-area: num-0;
+}
+.btn-del{
+    grid-area: btn-del;
+}
+.sym-equal{
+    grid-area: sym-equal;
+    
+}
+.sym-comma{
+    grid-area: sym-comma;
+}
+.sym-erase{
+    grid-area: sym-erase;
+}
+
